@@ -1,12 +1,25 @@
+//Link al repositorio: https://github.com/MisilJr/Informatica2025
 #include<stdio.h>
 
 int main(void){
 	float peso=0.0F, altura=0.0F, imc=0.0F;
 	
-	printf("Ingrese su peso en Kg: ");
-	scanf("%f", &peso);
-	printf("Ingrese su altura en metros: ");
-	scanf("%f", &altura);
+	do{
+		printf("Ingrese su peso en Kg: ");
+		scanf("%f", &peso);
+		if(peso < 0.0F){
+			printf("El peso debe ser positivo\n");
+		}	
+	}while(peso < 0.0F);
+	
+	do{
+		printf("Ingrese su altura en metros: ");
+		scanf("%f", &altura);
+		if(altura < 0.0F){
+			printf("La altura debe ser positiva\n");
+		}
+	}while(altura < 0.0F);
+
 	imc=peso / (altura * altura);
 	
 	printf("\nSu indice de masa corporal es: %.2f", imc);
