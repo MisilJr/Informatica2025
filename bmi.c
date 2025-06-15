@@ -1,4 +1,3 @@
-//Link al repositorio: https://github.com/MisilJr/Informatica2025
 #include<stdio.h>
 
 int main(void){
