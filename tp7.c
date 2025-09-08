@@ -1,4 +1,4 @@
-//Lin al repositorio: https://github.com/MisilJr/Informatica2025/tree/main
+//Link al repositorio: https://github.com/MisilJr/Informatica2025/tree/main
 #include <stdio.h>
 
 #define TAM 5
